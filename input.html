@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<style type="text/css">
+     body {
+    overflow-x: hidden;
+    font-family: "Times New Roman", Times, serif;
+        }
+		table{
+			border-collapse: collapse;
+		}
+	
+		.table{
+			width: 100%;
+		
+			background-color: transparent;
+		}
+		table tr td{
+		
+            width: 32px;
+            font-size: 18px;
+          
+           
+		}
+		.table-bordered thead th,
+		.table-bordered td,
+		.table-bordered th{
+			border: 1px solid black !important;
+		}
+
+        
+
+
+* This css is for normalizing styles. You can skip this. */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.new {
+  padding: 50px;
+}
+
+
+.box1{
+    
+  background-color: transparent;
+  border: 2px solid #000203;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  
+}
+
+.box2{
+   
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 7px;
+  width: 6px;
+  height: 14px;
+  border: solid #000000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  float: left;
+}
+
+
+.box3{
+    
+    background-color: transparent;
+    border: 2px solid #000203;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    height: 20px;
+    width:20px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    
+  }
+
+  .box4{
+    
+    background-color: transparent;
+    border: 1px solid #000203;
+    height: 18px;
+    padding:2px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    
+  }				
+	</style>
+</head>
+<body>
+	<div class="container">
+        
+        <div class="row">
+      
+
+            <div class="col-md-12">
+                <table width="100%">
+                    <tr>
+                        <td  style="text-align:left;">National Board of Revenue <br>
+                            www.nbr.gov.bd</td>
+                        <td  style="text-align: right;  ">IT-11GA2016</td>
+                    </tr>
+                    <tr>
+                        <td colspan="20" style="text-align: center; font-weight:bold">
+                            RETURN OF INCOME<br>For an Individual Assessee
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px;">
+                            The following schedules shall be the integral part of this return and must be<br>
+                            annexed to return in the following cases:<br>	
+                            Schedule 24A 	if you have income from Salaries<br>	
+                            Schedule 24B 	if you have income from house property<br>	
+                            Schedule 24C 	if you have income from business or profession<br>	
+                            Schedule 24D 	if you claim tax rebate	<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="20" style="text-align: center; font-weight:bold">
+                            PART I<br>Basic information
+                        </td>
+                    </tr>
+                </table>
+              
+            </div>
+			
+			
+			<div class="col-md-12">
+				<table border="1" width="100%" >
+                    <tr>
+                        <td rowspan="2" colspan="1">
+                            01
+                        </td>
+                        <td colspan="9" rowspan="2">
+                          
+                            <label for="email">Assessment Year:</label>
+                            <input  placeholder="2020" maxlength="4" name="" type="text"/>
+                            
+                            <input  placeholder="21" maxlength="2" name="" type="text"/>
+                            
+
+                        </td > 
+
+                        <td colspan="1" rowspan="2">
+                           02 
+                        </td>
+                        <td colspan="9">
+                          
+                            Return submitted under section 82BB?
+                            (tick one)
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        
+                       
+                        <td colspan="3">
+                            <label for="email">Yes</label>
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+
+
+                        </td>
+                        <td colspan="6">
+                            <label for="email">No</label>
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+
+ 
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="1">
+                            03
+                        </td>
+                        <td colspan="9">
+                            Name of the Assessee<br>Adv Imtiaj Islam
+                        </td > 
+
+                        <td colspan="1">
+                           04 
+                        </td>
+                        <!-- <td colspan="1" style="border-right: hidden;">
+                            Gender (tick one)
+                         </td> -->
+                        <td colspan="9" >
+                           
+                            <p style="float: left; margin-top: 0px;">  Gender (tick one)</p>
+                            
+                            
+                            
+                              <label for="email">M</label>
+                        <input  type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+
+                      
+                        <label for="email">F</label>
+                        <input  type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+
+                           
+ 
+                        </td>
+                       
+                    </tr>
+
+                    <tr>
+                        <td colspan="1">
+                            05
+                        </td>
+                        <td colspan="9">
+                           
+                            <label for="email">Twelve-digit TIN </label>
+                            <input  maxlength="12"  name="" type="text"/>
+                           
+                            
+                        </td > 
+
+                        <td colspan="1">
+                           06 
+                        </td>
+                        <td colspan="9" >
+                            <p style="float:left; margin-top: 0px;margin-bottom: 0px;"> Old TIN</p>
+                           
+                            <input style="float:left;margin-left:2px; display: block;width: 80%;"  name="" type="text"/>
+
+                        </td>
+                       
+                    </tr>
+
+                    <tr>
+                        <td colspan="1">
+                            07
+                        </td>
+                        <td colspan="9">
+                            <p style="float:left; margin-top: 0px;margin-bottom: 0px;"> Circle</p>
+                           
+                            <input style="float:left;margin-left:2px; display: block;"  name="" type="text"/>
+
+                        </td > 
+
+                        <td colspan="1">
+                           08
+                        </td>
+                        <td colspan="9">
+                        <p style="float:left; margin-top: 0px;margin-bottom: 0px;" >Zone</p>
+                           
+                            <input style="float:left;margin-left:2px; display: block;"  name="" type="text"/>
+
+                        </td>
+                       
+                    </tr>
+
+                    <tr>
+                        <td colspan="1">
+                            09
+                        </td>
+                        <td colspan="9">
+                            Resident Status (tick one)
+                            
+                        </td > 
+
+                       
+                        <td colspan="4">
+                            
+                            <p style="float:left; margin-top: 0px;margin-bottom: 0px; ">Resident</p>
+                            <input style="width:30px; height:20px;float:left;margin-left:2px;" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+
+                         </td>
+                         <td colspan="6">
+                             
+                             <p style="float:left; margin-top: 0px;margin-bottom: 0px; ">Non-resident</p>
+                             <input style="width:30px; height:20px;float:left;margin-left:2px;" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+ 
+                         </td>
+                       
+                    </tr>
+
+
+                    <tr>
+                        <td colspan="1" rowspan="3">
+                            10
+                        </td>
+                        <td colspan="19">
+                            
+
+                            <p style="float:left; margin-top: 0px;margin-bottom: 0px; ">                            Tick on the box(es) below if you are:
+                            </p>
+                            <input style="height:20px;float:left;margin-left:2px;" type="text" id="vehicle1" name="vehicle1">
+
+                        </td > 
+
+                    </tr>
+
+
+                    <tr>
+                       
+                        <td colspan="1">
+                            10A
+                        </td >
+                        <td colspan="7" style="border-right: hidden;">
+                            A gazetted war-wounded
+                            freedom fighter 
+                        </td >
+                        <td colspan="1">
+                            <input style="width:30px; height:20px;float:left;margin-left:2px;" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+
+                        </td >  
+
+                       
+                        <td colspan="1">
+                            10B
+                        </td>
+                        <td colspan="8" style="border-right: hidden;">
+                            A person with disability
+                        </td >
+                        <td colspan="1">
+                            <input style="width:30px; height:20px;float:left;margin-left:2px;" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+
+                        </td >  
+                       
+                    </tr>
+                    <tr>
+                        
+                        <td colspan="1">
+                            10C
+                        </td >
+                        <td colspan="7" style="border-right: hidden;">
+                            Aged 65 years or more 
+                        </td >
+                        <td colspan="1">
+                            <input style="width:30px; height:20px;float:left;margin-left:2px;" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+
+                        </td >  
+
+                       
+                        <td colspan="1">
+                            10D
+                        </td>
+                        <td colspan="8" style="border-right: hidden;">
+                    A parent/legal guardian of a person with disability 
+                        </td >
+                        <td colspan="1">
+                            <input style="width:30px; height:20px;float:left;margin-left:2px;" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+
+                        </td >  
+                    </tr>
+
+                    <tr>
+                        <td colspan="1">
+                            11
+                        </td>
+                        <td colspan="9">
+                            Date of birth (DD-MM-YYYY)<br>
+                           
+                            <input style="width:20px;float:left;margin-left:2px;" maxlength="1" name="" type="text"/>
+                            <input style="width:20px;float:left;margin-left:2px;" maxlength="1"  name="" type="text"/>
+                            <p style="float:left; margin-top:0px;"> -</p>
+                            <input style="width:20px;float:left;margin-left:2px;" maxlength="1" name="" type="text"/>
+                            <input style="width:20px;float:left;margin-left:2px;" maxlength="1" name="" type="text"/>
+                            <p style="float:left; margin-top:0px;"> -</p>
+                            <input style="width:20px;float:left;margin-left:2px;" maxlength="1" name="" type="text"/>
+                            <input style="width:20px;float:left;margin-left:2px;" maxlength="1" name="" type="text"/>
+
+                        </td > 
+
+                        <td colspan="1">
+                          12
+                        </td>
+                        <td colspan="9">
+                            
+                            <p style="float:left; margin-top:0px;">Income Year</p>
+                            <input style="width:40px;float:left;margin-left:2px;" maxlength="4" placeholder="2020" name="" type="text"/>
+                           
+                            <p style="float:left; margin-top:0px;">to</p>
+                            <input style="width:40px;float:left;margin-left:2px;" maxlength="4" placeholder="2021" name="" type="text"/>
+                           
+                        </td>
+                       
+                    </tr>
+
+                    <tr>
+                        <td colspan="1">
+                            13
+                        </td>
+                        <td colspan="19">
+                           
+                            <p style="float:left; margin-top: 0px;margin-bottom: 0px;">  If employed, employer’s name</p>
+                           
+                            <input style="float:left;margin-left:2px; display: block;"  name="" type="text"/>
+
+                        </td > 
+
+                    </tr>
+
+                    <tr>
+                        <td colspan="1">
+                            14
+                        </td>
+                        <td colspan="9">
+                            
+                            <p style="float:left; margin-top: 0px;margin-bottom: 0px;margin-bottom: 0px;">  Father’s Name</p>
+                           
+                            <input style="float:left;margin-left:2px; display: block;"  name="" type="text"/>
+
+                        </td > 
+
+                        <td colspan="1">
+                          15
+                        </td>
+                        <td colspan="9">
+                           
+                            <p style="float:left; margin-top: 0px;margin-bottom: 0px;margin-bottom: 0px;"> Mother’s Name</p>
+                           
+                            <input style="float:left;margin-left:2px; display: block;"  name="" type="text"/>
+
+                        </td>
+                       
+                    </tr>
+
+                    <tr>
+                        <td colspan="1">
+                            16
+                        </td>
+                        <td colspan="9">
+                             
+                            <p style="float:left; margin-top: 0px;margin-bottom: 0px;margin-bottom: 0px;"> Spouse Name</p>
+                           
+                            <input style="float:left;margin-left:2px; display: block;"  name="" type="text"/>
+
+                        </td > 
+
+                        <td colspan="1">
+                          17
+                        </td>
+                        <td colspan="9">
+                           
+                            <p style="float:left; margin-top: 0px;margin-bottom: 0px;margin-bottom: 0px;">  Spouse TIN (if any)</p>
+                           
+                            <input style="float:left;margin-left:2px; display: block;"  name="" type="text"/>
+
+                        </td>
+                       
+                    </tr>
+
+
+                    <tr>
+                        <td colspan="1">
+                            18
+                        </td>
+                        <td colspan="9">
+                            Present Address <br>
+                            House-05, Block-c, Aftabnagar Main Road, Dhaka
+                        </td > 
+
+                        <td colspan="1">
+                          19
+                        </td>
+                        <td colspan="9">
+                            Permanent Address <br>
+                            Kananchak, Banglabazar, ThanaChitalmari, Dist- Bagerhat 9360
+                        </td>
+                       
+                    </tr>
+
+                    <tr>
+                        <td colspan="1">
+                            20
+                        </td>
+                        <td colspan="9">
+                            Contact Telephone <br>
+                            01918926355 
+                        </td > 
+
+                        <td colspan="1">
+                          21
+                        </td>
+                        <td colspan="9">
+                            E-mail <br>
+                         imtiajislam80@gmail.com
+
+                        </td>
+                       
+                    </tr>
+
+                    <tr>
+                        <td colspan="1">
+                            22
+                        </td>
+                        <td colspan="9">
+                            National Identification Number
+                            <br> 
+                            19930111466000164
+                        </td > 
+
+                        <td colspan="1">
+                          23
+                        </td>
+                        <td colspan="9">
+                            Business Identification Number(s)
+                        </td>
+                       
+                    </tr>
+	              
+	            </table>
+	          
+			</div>
+            
+		</div>
+
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <table width="100%">
+                    <tr>
+                        <td colspan="20" style="text-align: center; font-weight:bold">
+                            PART II<br>Particulars of Income and Tax
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td style="padding-left: 50px;">
+                            Name Adv Imtiaj Islam
+                            <br>
+                           
+
+                        </td>
+                    </tr>
+                    <tr style="padding-left: 30px;">
+                        <td  style="text-align:left;">Particulars of Total Income
+                           
+                        <td  style="text-align: right;  ">Amount Tk </td>
+                    </tr>
+                  
+                    
+                   
+                </table>
+              
+            </div>
+			
+	
+			<div class="col-md-12">
+               
+               
+				
+                <table border="1" width="100%" >
+                
+                    <tr>
+                        <td colspan="1">
+                           24
+                        </td>
+                        <td colspan="11">
+                         Salaries (annex Schedule 24A)[TDS-5086]  
+                        </td > 
+
+                        <td colspan="1">
+                          S.21
+                        </td>
+                        <td colspan="7" align="right">
+                            <input  type="text" value="" name="">
+                            
+                        </td>
+                      
+                    </tr>
+
+                    <tr>
+                        <td colspan="1">
+                            25
+                        </td>
+                        <td colspan="11">
+
+                            Interest on securities 
+                            
+                        </td > 
+
+                        <td colspan="1">
+                          S.22
+                        </td>
+                        <td colspan="7" align="right">
+                            <input  type="text" value="" name="">
+                            
+                        </td>
+                      
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                            26
+                        </td>
+                        <td colspan="11">
+                          Income from house property(annex Schedule 24C)
+
+                        </td > 
+
+                        <td colspan="1">
+                          S.24
+                        </td>
+                        <td colspan="7" align="right">
+                            <input  type="text" value="" name="">
+                            
+                        </td>
+                      
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                            27
+                        </td>
+                        <td colspan="11">
+                           Agricultural income 80,000[ (200000-120000) -80000 60% cost]
+
+                        </td > 
+
+                        <td colspan="1">
+                          S.26
+                        </td>
+                        <td colspan="7" align="right">
+                            <input  type="text" value="" name="">
+                            
+                        </td>
+                      
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                            28
+                        </td>
+                        <td colspan="11">
+                            Income from business or profession (annex Schedule 24C)
+ 
+                        </td > 
+
+                        <td colspan="1">
+                         S.28
+                        </td>
+                        <td colspan="7" align="right">
+                            <input  type="text" value="" name="">
+                            
+                        </td>
+                      
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                            29
+                        </td>
+                        <td colspan="11">
+                            Capital gains 0
+
+                        </td > 
+
+                        <td colspan="1">
+                          S.31
+                        </td>
+                        <td colspan="7" align="right">
+                            <input  type="text" value="" name="">
+                            
+                        </td>
+                      
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                            30
+                        </td>
+                        <td colspan="11">
+                            Income from other sources [Bank Interest]
+
+
+                        </td > 
+
+                        <td colspan="1">
+                          S.33
+                        </td>
+                        <td colspan="7" align="right">
+                            <input  type="text" value="" name="">
+                            
+                        </td>
+                      
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                            31
+                        </td>
+                        <td colspan="11">
+                            Share of income from firm or AOP
+                        </td > 
+
+                        <td colspan="1">
+                         
+                        </td>
+                        <td colspan="7" align="right">
+                            <input  type="text" value="" name="">
+                            
+                        </td>
+                      
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                           32
+                        </td>
+                        <td colspan="11">
+                            Income of minor or spouse under section 43(4)
+                        </td > 
+
+                        <td colspan="1">
+                          S.43
+                        </td>
+                        <td colspan="7" align="right">
+                            <input  type="text" value="" name="">
+                            
+                        </td>
+                      
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                           33
+                        </td>
+                        <td colspan="11">
+                            Foreign income
+                        </td > 
+
+                        <td colspan="1">
+                          
+                        </td>
+                        <td colspan="7" align="right">
+                            <input  type="text" value="" name="">
+                            
+                        </td>
+                      
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                            34
+                        </td>
+                        <td colspan="11" style="font-weight:bold">
+                            Total income (aggregate of 24 to 33)
+                        </td > 
+
+                        <td colspan="1">
+                         
+                        </td>
+                        <td colspan="7" align="right">
+                            <input  type="text" value="" name="">
+                            
+                        </td>
+                      
+                    </tr>
+                  
+
+
+
+                    <tr style="border-right:hidden; border-left: hidden;">
+                        <td colspan="10"style="font-weight:bold" align="center">
+                            Tax Computation and Payment
+                        </td>
+                        <td colspan="10"style="font-weight:bold" align="center">
+                            Amount Tk
+                        </td>
+                        
+                      
+                    </tr>
+
+               
+                    <tr>
+                        <td colspan="1">
+                            35
+                        </td>
+                        <td colspan="11">
+                            Gross tax before tax rebate 
+                        </td > 
+
+                        
+                        <td colspan="8" align="right">
+                            <input  type="text" value="" name="">
+                            
+                        </td>
+                      
+                    </tr>
+
+                    <tr>
+                        <td colspan="1">
+                            36
+                        </td>
+                        <td colspan="11">
+                            Tax rebate (annex Schedule 24D) 
+                        </td > 
+
+                        
+                        <td colspan="8" align="right">
+                            <input  type="text" value="" name="">
+                            
+                        </td>
+                      
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                            37
+                        </td>
+                        <td colspan="11">
+                        Net tax after tax rebate
+                        </td > 
+
+                        
+                        <td colspan="8" align="right">
+                            <input  type="text" value="" name="">
+                            
+                        </td>
+                      
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                            38
+                        </td>
+                        <td colspan="11">
+                            Minimum tax
+                        </td > 
+
+                        
+                        <td colspan="8" align="right">
+                            <input  type="text" value="" name="">
+                            
+                        </td>
+                      
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                            39
+                        </td>
+                        <td colspan="11">
+                        Net wealth surcharge
+                        </td > 
+
+                        
+                        <td colspan="8" align="right">
+                            <input  type="text" value="" name="">
+                            
+                        </td>
+                      
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                            40
+                        </td>
+                        <td colspan="11">
+                            Interest or any other amount under the Ordinance (if any)
+                        </td > 
+
+                        
+                        <td colspan="8" align="right">
+                            <input  type="text" value="" name="">
+                            
+                        </td>
+                      
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                            41
+                        </td>
+                        <td colspan="11">
+                            Total amount payable  
+                        </td > 
+
+                        
+                        <td colspan="8" align="right">
+                            <input  type="text" value="" name="">
+                            
+                        </td>
+                      
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                            42
+                        </td>
+                        <td colspan="11">
+                            Tax deducted or collected at source (attach proof) 
+                        </td > 
+
+                        
+                        <td colspan="8" align="right">
+                            <input  type="text" value="" name="">
+                            
+                        </td>
+                      
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                            42
+                        </td>
+                        <td colspan="11">
+                            Advance tax paid (attach proof) 
+                        </td > 
+
+                        
+                        <td colspan="8" align="right">
+                            <input  type="text" value="" name="">
+                            
+                        </td>
+                      
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                            44
+                        </td>
+                        <td colspan="11">
+                            Adjustment of tax refund
+                        </td > 
+
+                        
+                        <td colspan="8" align="right">
+                            <input  type="text" value="" name="">
+                            
+                        </td>
+                      
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                            45
+                        </td>
+                        <td colspan="11">
+                            Amount paid with return (attach proof)
+                        </td > 
+
+                        
+                        <td colspan="8" align="right">
+                            <input  type="text" value="" name="">
+                            
+                        </td>
+                      
+                    </tr> <tr>
+                        <td colspan="1">
+                            46
+                        </td>
+                        <td colspan="11" style="font-weight:bold">
+                            Total amount paid and adjusted (42+43+44+45)
+                        </td > 
+
+                        
+                        <td colspan="8" align="right">
+                            <input  type="text" value="" name="">
+                            
+                        </td>
+                      
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                            47
+                        </td>
+                        <td colspan="11">
+                            Deficit or excess (refundable) (41-46)
+                        </td > 
+
+                        
+                        <td colspan="8" align="right">
+                            <input  type="text" value="" name="">
+                            
+                        </td>
+                      
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                            48
+                        </td>
+                        <td colspan="11">
+                            Tax exempted income[Salary]
+                        </td > 
+
+                        
+                        <td colspan="8" align="right">
+                            <input  type="text" value="" name="">
+                            
+                        </td>
+                      
+                    </tr>
+                    
+
+                   
+
+	            </table>
+	          
+			</div>
+            
+		</div>
+	</div>
+</body>
+</html>
